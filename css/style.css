@@ -8,7 +8,7 @@ body {
         
 }
 
-a { 
+/*a { 
   text-decoration: none; color:black; 
 }
 a:visited { 
@@ -22,7 +22,7 @@ a:focus {
 }
 a:hover, a:active { 
   text-decoration: white; 
-}
+}*/
 
 .header h1{
   color: #DCDCDC;
