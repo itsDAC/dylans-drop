@@ -21,7 +21,8 @@ a:visited {
 }
 a:hover { 
   text-decoration: white;
-  cursor: hand;  
+  cursor: hand;
+  cursor: pointer;  
 }
 a:focus { 
   text-decoration: white; 
