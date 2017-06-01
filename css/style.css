@@ -20,14 +20,16 @@ a:visited {
   text-decoration: none; 
 }
 a:hover { 
-  text-decoration: white; 
+  text-decoration: white;
+  cursor: crosshair;  
 }
 a:focus { 
   text-decoration: white; 
 }
 a:hover, a:active { 
-  text-decoration: white; 
+  text-decoration: white;
 }
+
 
 .header h1{
   color: #DCDCDC;
@@ -55,6 +57,7 @@ a:hover, a:active {
 .icons2 {
   display: block;
   align-items: center;
+
 }
 
 .content {
