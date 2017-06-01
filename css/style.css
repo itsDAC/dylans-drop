@@ -54,6 +54,7 @@ a:hover, a:active {
 
 .icons2 {
   display: block;
+  align-items: center;
 }
 
 .content {
