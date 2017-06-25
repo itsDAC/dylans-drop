@@ -1,42 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
-	<meta charset="UTF-8">
-	<title>collisweb</title>
-	<link rel="stylesheet" href="css/style.css">
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <title>Side Slide Navigation</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
 </head>
+
 <body>
+  <nav class="nav">
+  <div class="burger">
+    <div class="burger__patty"></div>
+  </div>
 
-<div class="container">
-    
-    <div class="parent2">
-        <nav>
-            <a href="#about" class="test1"><i class="fa fa-user fa-2x"></i></a>
-            <a href="#cv" class="test2"><i class="fa fa-graduation-cap fa-2x"></i></li></a>
-            <a href="#code" class="test3"><i class="fa fa-code fa-2x"></i></a>
-            <a href="#contact" class="test4"><i class="fa fa-envelope-o fa-2x"></i></a>
-            <div class="mask2"><i class="fa fa-home fa-3x"></i></div>
-        </nav>
-    </div>
+  <ul class="nav__list">
+    <li class="nav__item">
+      <a href="#1" class="nav__link c-blue"><i class="fa fa-user fa-2x"></i></a>
+    </li>
+    <li class="nav__item">
+      <a href="#2" class="nav__link c-yellow scrolly"><i class="fa fa-graduation-cap fa-2x"></i></a>
+    </li>
+    <li class="nav__item">
+      <a href="#3" class="nav__link c-red"><i class="fa fa-code fa-2x"></i></a>
+    </li>
+    <li class="nav__item">
+      <a href="#4" class="nav__link c-green"><i class="fa fa-envelope-o fa-2x"></i></a>
+    </li>
+  </ul>
+</nav>
 
-    <div class="header">
-      <h1>Collis Web</h1>
-    </div>
-
-     <div class="sub-header">
-      <h2>About</h2> 
-    </div>
-
-  <div class="content" id="about">
-      <p>       
-                            <h3>Dylan Collis</h3>
-                      <h4>Graduate Web Developer</h4>
-
-          I am a recent grad looking for a web dev role in Auckland. In the mean time, I am continuing to build my skills by developing new websites and providing web maintenance.
-      </p>
-
+<section class="panel b-blue" id="1">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline"><i class="fa fa-user fa-2x"></i>&nbsp;About</h1>
+      <div class="panel__block"></div>
                              <h4>About me..</h4>
       <p>
           I am a very friendly and energetic person who is comfortable meeting new people. 
@@ -45,8 +50,7 @@
           I am a computer gamer but I also enjoy the outdoors especially the beach and bush walking. 
           I am passionate and ready to learn more (I’ve been told that I’m really coachable). I’d love to hear about any opportunities short or long term.
       </p>
-      
-          <h3>TESTIMONIALS</h3>
+         <h3>TESTIMONIALS</h3>
 
       <p>
         <i>
@@ -74,25 +78,24 @@
           -Heather Evans, ISCD Committee.
         </i>
       </p>
-     
-  </div>
 
-   <div class="sub-header">
-      <h2>Qualifications</h2>
     </div>
+  </article>
+</section>
 
-    <div class="content" id="cv">
-        
-            <p>
+<section class="panel b-yellow" id="2">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline"><i class="fa fa-graduation-cap fa-2x"></i>&nbsp;Qualifications</h1>
+      <div class="panel__block"></div>
+      
                         <h4>YOOBEE ACG School of Design</h4>
+            <p>
                     Level 6 Diploma in Web Development, 2016
             </p>
 
-
-            <p>
                         <h4>Skills Acquired Whilst Studying….</h4>
-
-
+            <p>
                 <li>Producing, modifying and maintaining quality websites and web applications. </li>
                 <li>Establishing the purpose of a website based upon its target audience.</li>
                 <li>Awareness of international web standards and protocols.</li>
@@ -103,15 +106,16 @@
                 <li>Successful search engine optimisation.</li> 
 
             </p>
-        
     </div>
+  </article>
+</section>
 
-  <div class="sub-header">
-      <h2>Code</h2>
-    </div>
-
-    <div class="content" id="code">
-            <h4>Languages</h4>
+<section class="panel b-red" id="3">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline"><i class="fa fa-code fa-2x"></i>&nbsp;Code</h1>
+      <div class="panel__block"></div>
+       <h4>Languages</h4>
 
             <div class="icons2">
                 <li>HTML5</li>
@@ -133,15 +137,18 @@
                     <li>CMS Training</li>
             </p>
     </div>
+  </article>
+</section>
 
-    <div class="sub-header">
-      <h2>Contact</h2>
+<section class="panel b-green" id="4">
+  <article class="panel__wrapper">
+    <div class="panel__content">
+      <h1 class="panel__headline"><i class="fa fa-envelope-o fa-2x"></i>&nbsp;Contact</h1>
+      <div class="panel__block"></div>
     </div>
 
     <div class="content" id="contact"> 
       <p>
-                <h3>Contact…</h3>
-
                 <li>collis.dylan@gmail.com</li>
                 <li>020 40973897</li>
       </p>
@@ -153,11 +160,13 @@
                 <a href="//www.instagram.com/collis.dylan/?hl=en"><i class="fa fa-instagram"></i></a>
             </div>
     </div>
-  </div>
-</div>
+    </div>
+  </article>
+</section>
 
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>

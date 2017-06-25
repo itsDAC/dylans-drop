@@ -1,24 +1,55 @@
-$(document).ready(function() {
+var menu = document.querySelector('.nav__list');
+var burger = document.querySelector('.burger');
+var doc = $(document);
+var l = $('.scrolly');
+var panel = $('.panel');
+var vh = $(window).height();
 
-  var active1 = false;
-  var active2 = false;
-  var active3 = false;
-  var active4 = false;
+var openMenu = function() {
+  burger.classList.toggle('burger--active');
+  menu.classList.toggle('nav__list--active');
+};
 
-    $('.parent2').on('mousedown touchstart', function() {
-    
-    if (!active1) $(this).find('.test1').css({'background-color': 'gray', 'transform': 'translate(0px,125px)'});
-    else $(this).find('.test1').css({'background-color': 'dimGray', 'transform': 'none'}); 
-     if (!active2) $(this).find('.test2').css({'background-color': 'gray', 'transform': 'translate(60px,105px)'});
-    else $(this).find('.test2').css({'background-color': 'darkGray', 'transform': 'none'});
-      if (!active3) $(this).find('.test3').css({'background-color': 'gray', 'transform': 'translate(105px,60px)'});
-    else $(this).find('.test3').css({'background-color': 'silver', 'transform': 'none'});
-      if (!active4) $(this).find('.test4').css({'background-color': 'gray', 'transform': 'translate(125px,0px)'});
-    else $(this).find('.test4').css({'background-color': 'silver', 'transform': 'none'});
-    active1 = !active1;
-    active2 = !active2;
-    active3 = !active3;
-    active4 = !active4;
-      
-    });
-});
+// reveal content of first panel by default
+panel.eq(0).find('.panel__content').addClass('panel__content--active');
+
+var scrollFx = function() {
+  var ds = doc.scrollTop();
+  var of = vh / 4;
+  
+  // if the panel is in the viewport, reveal the content, if not, hide it.
+  for (var i = 0; i < panel.length; i++) {
+    if (panel.eq(i).offset().top < ds+of) {
+     panel
+       .eq(i)
+       .find('.panel__content')
+       .addClass('panel__content--active');
+    } else {
+      panel
+        .eq(i)
+        .find('.panel__content')
+        .removeClass('panel__content--active')
+    }
+  }
+};
+
+var scrolly = function(e) {
+  e.preventDefault();
+  var target = this.hash;
+  var $target = $(target);
+
+  $('html, body').stop().animate({
+      'scrollTop': $target.offset().top
+  }, 300, 'swing', function () {
+      window.location.hash = target;
+  });
+}
+
+var init = function() {
+  burger.addEventListener('click', openMenu, false);
+  window.addEventListener('scroll', scrollFx, false);
+  window.addEventListener('load', scrollFx, false);
+  $('a[href^="#"]').on('click',scrolly);
+};
+
+doc.on('ready', init);
