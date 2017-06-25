@@ -6,6 +6,7 @@ body {
   font-family: 'Montserrat';
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  list-style: none;
 }
 
 ul {
