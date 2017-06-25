@@ -253,6 +253,10 @@ ul {
   background: #e6d068;
 }
 
+div#contact.content {
+  text-align: center;
+}
+
 div#contact.content i {
   color: black;
   size: 25px;
