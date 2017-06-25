@@ -252,7 +252,7 @@ ul {
   background: #e6d068;
 }
 
-.logo {
+/*.logo {
   position: fixed;
   bottom: 3vh;
   right: 3vw;
@@ -268,4 +268,4 @@ ul {
 .logo img:hover {
   -webkit-transform: rotate(180deg) scale(1.1);
           transform: rotate(180deg) scale(1.1);
-}
+}*/
