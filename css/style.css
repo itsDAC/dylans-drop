@@ -253,6 +253,6 @@ ul {
   background: #e6d068;
 }
 
-#contact i {
+div#contact.content i {
   color: black;
 }
