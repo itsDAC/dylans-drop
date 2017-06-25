@@ -221,6 +221,15 @@ ul {
   }
 }
 
+@media (max-width: 320px) {
+  .panel__content--active {
+    padding-left: 50px;
+    -webkit-transform: none;
+          transform: none;
+    opacity: 1;
+  }
+}
+
 .c-blue {
   color: #5fc7ea;
 }
