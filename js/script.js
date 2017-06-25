@@ -1,9 +1,9 @@
 var menu = document.querySelector('.nav__list');
 var burger = document.querySelector('.burger');
-// var doc = $(document);
-var l = $('.scrolly');
-var panel = $('.panel');
-var vh = $(window).height();
+var doc = (document);
+var l = ('.scrolly');
+var panel = ('.panel');
+var vh = (window).height();
 
 var openMenu = function() {
   burger.classList.toggle('burger--active');
